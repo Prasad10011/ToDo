@@ -49,7 +49,7 @@ const TodoList = () => {
                 </div>
             </div>
             <div className='task-container'>
-                {taskList.map((obj, index) => <Card taskObj={obj} index={index} deleteTask={deleteTask} updateListArray={updateListArray} />)}
+                {taskList.map((obj, index) => <Card taskObj={obj} key={index} index={index} deleteTask={deleteTask} updateListArray={updateListArray} />)}
             </div>
             <CreateTask toggle={toggle} modal={modal} save={saveTask} />
         </>
